@@ -1,6 +1,11 @@
 # ipdb-python
 IPIP.net officially supported IP database ipdb format parsing library
 
+# 修改说明
+添加了导出完整数据库的功能，使用方式参见example.py。
+目前没有提交PIP，需要添加环境变量使用。
+导出完整数据库为csv格式，方便进行后续分析处理，便于路由等使用
+
 # Python Parse ipdb file
 
 ## Installing
