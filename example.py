@@ -21,6 +21,20 @@ def test_free():
     except Exception as e:
         print(e)
 
+def test_free_new()
+    db = ipdb.Free("c:/work/ipdb/mydata4vipweek2.ipdb")
+    print(db.is_ipv4(), db.is_ipv6())
+    print(db.languages())
+    print(db.fields())
+    print(db.build_time())
+    print(db.find("60.1.1.60", "CN"))
+    print(db.find("10.0.0.1", "CN"))
+    print(db.find_info("118.28.1.1", "CN").country_name)
+
+def dump_free():
+
+    db = ipdb.FreeDump("c:/work/ipdb/city.free.ipdb")
+    db.dump_all("c:/work/ipdb/dump.csv")
 
 def test_city_ipv4():
     db = ipdb.City("c:/tiantexin/download/mydata4vipday4_cn.ipdb")
@@ -97,8 +111,10 @@ def test_idc_list():
     print(db.find_map("1.1.1.1", "CN"))
     print(db.find_map("8.8.8.8", "CN"))
 
+
+print_free()
 # test_city_ipv4()
 # test_city_ipv6_test()
 # test_base_station()
-test_city_ipv6()
+# test_city_ipv6()
 # test_city_ipv4()
